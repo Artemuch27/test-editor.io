@@ -97,55 +97,5 @@
       />
     </div>
 
-    <script type="text/javascript">
-      // Duration in milliseconds to wait while the Kameleoon application file is loaded
-      var kameleoonLoadingTimeout = 1000;
-
-      window.kameleoonQueue = window.kameleoonQueue || [];
-      window.kameleoonStartLoadTime = new Date().getTime();
-      if (
-        !document.getElementById("kameleoonLoadingStyleSheet") &&
-        !window.kameleoonDisplayPageTimeOut
-      ) {
-        var kameleoonS = document.getElementsByTagName("script")[0];
-        var kameleoonCc =
-          "* { visibility: hidden !important; background-image: none !important; }";
-        var kameleoonStn = document.createElement("style");
-        kameleoonStn.type = "text/css";
-        kameleoonStn.id = "kameleoonLoadingStyleSheet";
-        if (kameleoonStn.styleSheet) {
-          kameleoonStn.styleSheet.cssText = kameleoonCc;
-        } else {
-          kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
-        }
-        kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
-        window.kameleoonDisplayPage = function (fromEngine) {
-          if (!fromEngine) {
-            window.kameleoonTimeout = true;
-          }
-          if (kameleoonStn.parentNode) {
-            kameleoonStn.parentNode.removeChild(kameleoonStn);
-          }
-        };
-        window.kameleoonDisplayPageTimeOut = window.setTimeout(
-          window.kameleoonDisplayPage,
-          kameleoonLoadingTimeout
-        );
-        /*
-        //static.master.preview.kameleoon.net/customers/html/zjhrp3xmzy/kameleoon.js
-        //zjhrp3xmzy.kameleoon.eu/kameleoon.js
-        static.kameleoon-dev.net/customers/html/zjhrp3xmzy/kameleoon.js
-
-        
-        */
-      }
-    </script>
-    <!-- <script type="text/javascript" src="//static.graphical-editor-v2.preview.kameleoon.net/customers/html/2u1tmxh34w/kameleoon.js" async="true"></script> -->
-    <script
-      type="text/javascript"
-      src="//53390ja3tr.kameleoon.eu/kameleoon.js"
-      async="true"
-    ></script>
-    <!-- <script type="text/javascript" src="//static.kameleoon-dev.net/customers/html/2u1tmxh34w/kameleoon.js" async="true"></script> -->
   </body>
 </html>

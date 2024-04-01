@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.467ffebd.chunk.js",
-    "main.js.map": "/static/js/main.467ffebd.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.be163374.js",
-    "runtime-main.js.map": "/static/js/runtime-main.be163374.js.map",
-    "static/js/2.022cd72e.chunk.js": "/static/js/2.022cd72e.chunk.js",
-    "static/js/2.022cd72e.chunk.js.map": "/static/js/2.022cd72e.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.022cd72e.chunk.js.LICENSE.txt": "/static/js/2.022cd72e.chunk.js.LICENSE.txt"
+    "main.js": "https://artemuch27.github.io/test-editor.io/static/js/main.467ffebd.chunk.js",
+    "main.js.map": "https://artemuch27.github.io/test-editor.io/static/js/main.467ffebd.chunk.js.map",
+    "runtime-main.js": "https://artemuch27.github.io/test-editor.io/static/js/runtime-main.be163374.js",
+    "runtime-main.js.map": "https://artemuch27.github.io/test-editor.io/static/js/runtime-main.be163374.js.map",
+    "static/js/2.022cd72e.chunk.js": "https://artemuch27.github.io/test-editor.io/static/js/2.022cd72e.chunk.js",
+    "static/js/2.022cd72e.chunk.js.map": "https://artemuch27.github.io/test-editor.io/static/js/2.022cd72e.chunk.js.map",
+    "index.html": "https://artemuch27.github.io/test-editor.io/testimonial.html",
+    "static/js/2.022cd72e.chunk.js.LICENSE.txt": "https://artemuch27.github.io/test-editor.io/static/js/2.022cd72e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.be163374.js",
-    "static/js/2.022cd72e.chunk.js",
-    "static/js/main.467ffebd.chunk.js"
+    "https://artemuch27.github.io/test-editor.io/static/js/runtime-main.be163374.js",
+    "https://artemuch27.github.io/test-editor.io/static/js/2.022cd72e.chunk.js",
+    "https://artemuch27.github.io/test-editor.io/static/js/main.467ffebd.chunk.js"
   ]
 }

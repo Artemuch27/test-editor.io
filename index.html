@@ -69,7 +69,53 @@
 </script>
 <script type="text/javascript" src="//l7yyolloot.kameleoon.io/kameleoon.js" async="true" fetchpriority="high"></script>
 
- 
+   <script>
+    class CustomElement extends HTMLElement {
+      constructor() {
+        super();
+
+        // Attach Shadow DOM
+        const shadow = this.attachShadow({ mode: 'open' });
+
+        // Create a wrapper div
+        const wrapper = document.createElement('div');
+        wrapper.textContent = "I'm inside the Shadow DOM!";
+
+        // Create a nested element
+        const nestedDiv = document.createElement('div');
+        nestedDiv.textContent = "I'm a nested element!";
+        
+        // Create sibling elements
+        const siblingDiv1 = document.createElement('div');
+        siblingDiv1.textContent = "I'm a sibling element 1!";
+        
+        const siblingDiv2 = document.createElement('div');
+        siblingDiv2.textContent = "I'm a sibling element 2!";
+
+        // Apply some styles
+        const style = document.createElement('style');
+        style.textContent = `
+          div {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+          }
+        `;
+
+        // Append elements to shadow root
+        shadow.appendChild(style);
+        shadow.appendChild(wrapper);
+        wrapper.appendChild(nestedDiv); // Nesting the element
+        shadow.appendChild(siblingDiv1); // Adding the first sibling
+        shadow.appendChild(siblingDiv2); // Adding the second sibling
+      }
+    }
+
+    // Define the custom element
+    customElements.define('custom-element', CustomElement);
+  </script> 
 
 </head>
 
@@ -679,53 +725,7 @@
     </div>
   </footer>
   <!-- footer section -->
-   <script>
-    class CustomElement extends HTMLElement {
-      constructor() {
-        super();
-
-        // Attach Shadow DOM
-        const shadow = this.attachShadow({ mode: 'open' });
-
-        // Create a wrapper div
-        const wrapper = document.createElement('div');
-        wrapper.textContent = "I'm inside the Shadow DOM!";
-
-        // Create a nested element
-        const nestedDiv = document.createElement('div');
-        nestedDiv.textContent = "I'm a nested element!";
-        
-        // Create sibling elements
-        const siblingDiv1 = document.createElement('div');
-        siblingDiv1.textContent = "I'm a sibling element 1!";
-        
-        const siblingDiv2 = document.createElement('div');
-        siblingDiv2.textContent = "I'm a sibling element 2!";
-
-        // Apply some styles
-        const style = document.createElement('style');
-        style.textContent = `
-          div {
-            color: white;
-            background-color: black;
-            padding: 10px;
-            border-radius: 5px;
-            margin: 5px 0;
-          }
-        `;
-
-        // Append elements to shadow root
-        shadow.appendChild(style);
-        shadow.appendChild(wrapper);
-        wrapper.appendChild(nestedDiv); // Nesting the element
-        shadow.appendChild(siblingDiv1); // Adding the first sibling
-        shadow.appendChild(siblingDiv2); // Adding the second sibling
-      }
-    }
-
-    // Define the custom element
-    customElements.define('custom-element', CustomElement);
-  </script> 
+ 
 
 
   

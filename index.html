@@ -31,6 +31,30 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <style>
+    /* Add check icon pseudo-element to navbar-brand */
+    .navbar-brand {
+      position: relative;
+      padding-right: 28px; /* Make space for the icon */
+    }
+    .navbar-brand::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      /* SVG checkmark background */
+      background-image: url('data:image/svg+xml;utf8,<svg fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.485 3.929a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L6 9.586l6.293-6.293a1 1 0 0 1 1.414 0z"/></svg>');
+      background-size: 18px 18px;
+      background-repeat: no-repeat;
+      background-position: center;
+      pointer-events: none;
+    }
+  </style>
+
   <script type="text/javascript">
     // Duration in milliseconds to wait while the Kameleoon application file is loaded
     var kameleoonLoadingTimeout = 1000;
@@ -134,7 +158,7 @@
               ChocoLux
             </a>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle na[...]
               <span class=""> </span>
             </button>
 
@@ -285,7 +309,7 @@
                 </h2>
               </div>
               <p>
-                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their default model text, </p>
+                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishin[...]
               <a href="#">
                 <span>
                   Read More
@@ -485,7 +509,7 @@
                           Gero Miliya
                         </h4>
                         <p>
-                          long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
+                          long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong establi[...]
                         </p>
                         <i class="fa fa-quote-left" aria-hidden="true"></i>
                       </div>
@@ -501,7 +525,7 @@
                           Gero Miliya
                         </h4>
                         <p>
-                          long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
+                          long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong establi[...]
                         </p>
                         <i class="fa fa-quote-left" aria-hidden="true"></i>
                       </div>
@@ -517,7 +541,7 @@
                           Gero Miliya
                         </h4>
                         <p>
-                          long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
+                          long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong establi[...]
                         </p>
                         <i class="fa fa-quote-left" aria-hidden="true"></i>
                       </div>
@@ -757,4 +781,3 @@
 </body>
 
 </html>
-
